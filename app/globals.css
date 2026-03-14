@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap");
+
+:root {
+  --cream: #f5f0e8;
+  --cream-dark: #ede5d6;
+  --copper: #b87333;
+  --copper-light: #d4956a;
+  --copper-pale: #f0dbc8;
+  --dark: #2c2416;
+  --mid: #6b5b47;
+  --light-text: #9c8b79;
+  --gold: #c9a84c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  font-family: "Jost", sans-serif;
+  color: var(--dark);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 0 18px 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .page {
+    padding: 0 14px 60px;
+  }
+}
+
+/* Utility */
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--copper);
+  margin-bottom: 20px;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-header .eyebrow {
+  margin-bottom: 8px;
+}
+
+.section-header h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  font-weight: 300;
+}

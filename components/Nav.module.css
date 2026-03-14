@@ -1,0 +1,177 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0 24px;
+  border-bottom: 0.5px solid var(--copper);
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: var(--copper);
+}
+
+.navLinksDesktop {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.menuButton {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 0.5px solid var(--copper);
+  background: transparent;
+  color: var(--copper);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.menuIcon {
+  width: 18px;
+  height: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background: currentColor;
+}
+
+.menuIcon::before {
+  top: 0;
+}
+
+.menuIcon::after {
+  bottom: 0;
+}
+
+.menuIcon {
+  border-top: 1.5px solid currentColor;
+  border-bottom: 1.5px solid transparent;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenuOpen {
+  display: block;
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  left: 0;
+  background: var(--cream);
+  border: 0.5px solid var(--copper-pale);
+  box-shadow: 0 16px 40px rgba(44, 36, 22, 0.14);
+  z-index: 20;
+}
+
+.mobileMenuInner {
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.mobileNavLink {
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  background: var(--cream-dark);
+  border: 0.5px solid var(--copper-pale);
+  padding: 12px 12px;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+  transition: color 0.2s, background 0.2s;
+}
+
+.mobileNavLink:hover {
+  color: var(--copper);
+  background: var(--cream);
+}
+
+.mobileSocialRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 0.5px solid var(--copper-pale);
+}
+
+.navLink {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: var(--copper);
+}
+
+.navSocial {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-left: 0.5px solid var(--copper-pale);
+  padding-left: 20px;
+}
+
+.socialIcon {
+  width: 30px;
+  height: 30px;
+  border: 0.5px solid var(--copper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: var(--copper);
+}
+
+.socialIcon:hover {
+  background: var(--copper);
+  color: var(--cream);
+}
+
+.socialIcon svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+@media (max-width: 768px) {
+  .navLinksDesktop {
+    display: none;
+  }
+
+  .menuButton {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 520px) {
+  .logo {
+    font-size: 16px;
+  }
+}

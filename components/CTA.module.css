@@ -1,0 +1,102 @@
+.ctaSection {
+  text-align: center;
+  padding: 64px 48px;
+  background: var(--dark);
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.ctaSection h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.ctaSection p {
+  font-size: 14px;
+  color: #c4ad94;
+  margin-bottom: 32px;
+}
+
+.ctaIgBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 36px;
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.ctaIgBtn:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.ctaIgBtn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.socialBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 36px;
+  padding-top: 36px;
+  border-top: 0.5px solid #4a3c2a;
+  flex-wrap: wrap;
+}
+
+.socialBarLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #c4ad94;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  transition: color 0.2s;
+}
+
+.socialBarLink:hover {
+  color: var(--gold);
+}
+
+.socialBarLink svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.dot {
+  color: #4a3c2a;
+  font-size: 10px;
+}
+
+@media (max-width: 580px) {
+  .ctaSection {
+    padding: 48px 24px;
+  }
+
+  .ctaSection h2 {
+    font-size: 30px;
+  }
+}

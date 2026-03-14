@@ -1,0 +1,52 @@
+.testimonials {
+  margin-bottom: 80px;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.testimonial {
+  background: var(--cream-dark);
+  padding: 28px 24px;
+  border-left: 2px solid var(--copper);
+}
+
+.quoteMark {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  color: var(--copper-pale);
+  line-height: 0.8;
+  margin-bottom: 12px;
+}
+
+.stars {
+  color: var(--copper);
+  font-size: 11px;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.quoteText {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+.quoteAuthor {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--copper);
+}
+
+@media (max-width: 580px) {
+  .testimonialGrid {
+    grid-template-columns: 1fr;
+  }
+}

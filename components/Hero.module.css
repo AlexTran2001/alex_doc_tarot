@@ -1,0 +1,69 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 1.15;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--copper);
+}
+
+.heroDesc {
+  font-size: 15px;
+  color: var(--mid);
+  line-height: 1.75;
+  margin-bottom: 32px;
+}
+
+.btnPrimary {
+  display: inline-block;
+  padding: 13px 32px;
+  background: var(--copper);
+  color: var(--cream);
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btnPrimary:hover {
+  background: var(--dark);
+}
+
+.cardVisual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 320px;
+}
+
+@media (max-width: 580px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .cardVisual {
+    height: 240px;
+  }
+}
